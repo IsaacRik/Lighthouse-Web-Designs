@@ -48,7 +48,7 @@ h1 {
 }
 
 .logo {
-    width: clamp(120px,9vw, 200px);
+    width: 130px;
 }
 
 button{
@@ -296,12 +296,13 @@ background-repeat: no-repeat;
         padding-right: clamp(0rem, 20vw, 50rem);
         padding-top: 20px;
         text-align: center;
-
     }
+
 }
 .devices {
-    width: clamp(100px,50vw,800px);
-    min-width: 510px;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
     position: relative;
     z-index: -1;
 }
