@@ -41,10 +41,14 @@ p {
 h2, h4{
     margin-bottom: 0;
 }
+h1 {
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-weight: bold;
+}
 
 .logo {
-    font-size: 2.5rem;
-    color: white;
+    width: clamp(120px,9vw, 200px);
 }
 
 button{
@@ -65,7 +69,10 @@ button{
 footer button {
     margin-left: 0px;
 }
-
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 2.4rem;
+    }}
 
 
 /* // -----------------------------------
@@ -94,7 +101,7 @@ footer button {
      #about .primary-navigation, #contact .primary-navigation, #portfolio .primary-navigation {
         background: hsla(0, 0%, 51%, 0.475);
      }
-     @media only screen and (min-width: 768px) {
+     @media only screen and (min-width: 1200px) {
         #about .primary-navigation, #contact .primary-navigation, #portfolio .primary-navigation {
             background: none;
         }
@@ -160,13 +167,12 @@ footer button {
         }
         .header .logo {
             position: relative;
-            min-width: 300px;
         }
     }
 /* Header
 -------------------------------------------- */
 .header{
-   height: clamp(100px, 18vw, 200px);
+   height: clamp(150px, 14vw, 180px);
    background-image: url(../images/Header2.jpg);
    background-position: center;
    background-size: cover;
@@ -176,7 +182,6 @@ footer button {
 
 #main_page .header{
     background-image: none;
-    height: 140px
 }
 
 .header ul{
@@ -200,27 +205,43 @@ footer button {
 
 footer {
     background-image: url(../images/footer.svg);
-    margin-top: -200px;
-    padding-bottom: 1rem;
+    margin-top: -200px; 
+    height: auto;
+    padding-top: 50px;
 }
 
 footer p{
-    margin-bottom: 0px;
+    margin-bottom: 0px
 }
 
 .footer_info{
-    padding-top: 300px;
+    padding-top: 220px;
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    margin-bottom: auto;
 }
-.footer_info a {
-    margin-left: 2rem;
-    margin-bottom: 20px;
+
+.footer_contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright {
+    font-size: .7rem;
 }
 
 @media only screen and (min-width: 768px) {
+    footer{
+        height: 450px;
+        padding-top: 100px;
+    }
     footer, .footer_info {
         display: flex;
         flex-direction: column;
@@ -230,6 +251,12 @@ footer p{
         margin: 0px;
         padding: 0px;
         margin-bottom: 10px;
+    }
+    .footer_contain{
+        flex-direction: row;
+    }
+    .copyright {
+        font-size: 1rem;
     }
 }
 
@@ -273,9 +300,10 @@ background-repeat: no-repeat;
     }
 }
 .devices {
-    width: 50vw;
+    width: clamp(100px,50vw,800px);
     min-width: 510px;
     position: relative;
+    z-index: -1;
 }
 
 .monthly_subscription{
@@ -352,6 +380,7 @@ background-repeat: no-repeat;
 ------------------------------------------------------------------ */
 .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 80px;
 }
@@ -362,12 +391,7 @@ background-repeat: no-repeat;
     padding-bottom: 60px;
 }
 .me {
-    width: 200px;
-}
-
-.about_right{
-    max-width: 600px;
-    
+    width: 100px;
 }
 
 .wordpress{
@@ -416,6 +440,15 @@ background-repeat: no-repeat;
     .about_me, .wordpress {
         padding-left: clamp(0rem, 15vw, 50rem);
         padding-right: clamp(0rem, 10vw, 50rem);
+    }
+    .about_right{
+        max-width: 600px;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .me {
+        width: 200px;
     }
 }
 
