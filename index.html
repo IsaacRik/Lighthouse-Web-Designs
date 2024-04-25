@@ -4,39 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pique</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Zen Creative</title>
+    <script src ="Javascript/nav.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/hamburgers.css" rel="stylesheet">
 </head>
-<body>
-<div class="background">
+<body id ="main_page">
+    <!-- Navigation bar
+    ----------------------------------------------->
  <div class="header">
-    <h1>Pique</h1>
-    <div class="navbar">
-        <ul>
-            <li>About</li>
-            <li>Services</li>
-            <li>Portfolio</li>
-        </ul>
-    </div>
-    <button>Contact Us</button>
+    <a class="logo" aria-label="click to go to home page" href="index.html">Zen Creative</a>
+   <!-- <button class = "mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="flase">
+        <span class="sr-only">Menu</span>
+    </button> -->
+    <button class="hamburger hamburger--slider" aria-controls="primary-navigation" aria-expanded="false" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>    
+    <div class="navcontainer"> 
+    <nav>
+    <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+        <li class="active">
+            <a href="index.html">Home</a>
+            <div class="line"></div>
+        </li>
+        <li class="active">
+            <a href="about.html">About</a>
+        </li>
+        <li class="active">
+            <a href="services.html">Services</a>
+        </li>
+        <li class="active">
+            <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="active">
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+   </nav>
+   </div>
  </div>   
- <div class="hero">
-    <p>Small business websites from $200 a month</p>
-    <p>Lightning fast and elegant websites that guarantee results</p>
-    <button>Contact Us</button>
+
+<!-- --------------------------------------------------- -->
+<!-- Hero
+----------------------------------------------------->
+ <main id ="main">
+    <section class="hero">
+    <h2>Small business Websites for $150 a month</h2>
+    <p>Elegant and lightning fast websites that get you noticed - Developed right here in Exmouth</p>
+    <a href = "contact.html"><button class="contactbutton">CONTACT US</button></a>
  </div>
- 
- <div class="why">
-    <div>
-        <h3>Why Pique?</h3>
+ </section>
+ <!-- --------------------------------------------------------- -->
+ <section class="why">
+    <img class = "devices" src="images/laptop-phone-tablet.png">
+       <h1><span class = "coloured-text">WHY</span> US?</h1>
+       <p>No flashy gimmicks or marketing jargon, just straight to the point website design and development, all done with a convenient monthly payment structure, and hand coded for optimal search results.
+         </p>
+    </section>
+<!-- -------------------------------------------------------------- -->
+
+ <section class="monthly_subscription">
+    <img class = "dollar" src="images/$.svg">
+    <h2>No upfront payment, <span class = "coloured-text">$200</span> a month, <span class = "coloured-text">6 month</span> minimum contract.</h2>
+    <p>All-inclusive, no hidden extras. You own the domain and content, and we guarantee your site will be up within the first month</p>
+    <img class ="relax" src="images/relax.svg">
+    <div class="features">
+        <h2>We Handle <span class = "coloured-text">Everything</span></h2>
+        <p>So you can sit back, relax, and focus on your business</p>
+        <div class="feature">
+            <img class = "feature_icon" src="images/check.svg">
+            <div class="right">
+            <h4>Website Design & Development</h4>
+            <p>Monthly Fee includes all design, development and testing</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class = "feature_icon" src="images/check.svg">
+            <div class="right">
+            <h4>Hosting</h4>
+            <p>Hosting fees are included in the monthly fee</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class = "feature_icon" src="images/check.svg">
+            <div class="right">
+            <h4>Unlimited Edits</h4>
+            <p>Change anything you want and we'll guarantee it is done within 24 hours</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class = "feature_icon" src="images/check.svg">
+            <div class="right">
+            <h4>Regular Updates</h4>
+            <p>We stay up to date with any changes to Google's algorithm and update your website on a regular basis to ensure its performing as best it can</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class = "feature_icon" src="images/check.svg">
+            <div class="right">
+            <h4>Lightning Fast</h4>
+            <p>We guarantee a google page speed score of 97 or higher, this helps boost your page to the top of the search results</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img class = "feature_icon" src="images/check.svg">
+            <div class="right">
+            <h4>Google Analytics</h4>
+            <p>We install google Analytics for free to monitor traffic and where it comes from</p>
+            </div>
+        </div>
     </div>
-    <div>
-       <p>No flashy gimmicks or superfluous marketing jargon. Our websites are straight to the point. We’ll have your website up and running in a matter of days and our convenient monthly payment structure makes our service incredibly affordable.</p>
-       <p> We don't use wordpress or any other page builder, our websites are all custom coded which guarantees lightning fast websites that are elegant and secure</p>
-    </div>
-    </div>
-    </div>
- <div class="monthly_fee"></div>
- 
+    </section>
+
+    <section class="not_convinced">
+        <h2>Do I Really <span class = "coloured-text">Need</span> a Website?</h2>
+        <p>Having a website in this day and age is necessity if you want to grow your business and gain more clients.
+            It is very often the first impression for potential customers, and a big decision maker between picking you or your competitor.
+            Think of it as a 24/7 salesman, and if it brings in just one additional customer worth hundreds to thousands then it's a no-brainer.</p>
+    </section>
+
+    <section class="here_to_help">
+        <img class ="handshake" src ="images/handshake.svg">
+        <h2>We are here to <span class = "coloured-text">help</span></h2>
+        <p>We want to build partnerships so if we don't think your business will benefit from our services we won't push you. Our satisfaction comes from seeing our services help grow your business. 
+            We love to help so if you have any questions please get in contact for a free consultation.
+        </p>
+    </section>
+    </main>
+    <footer>
+        <div class="footer_info">
+            <a class="logo" aria-label="click to go to home page" href="index.html">Zen Creative</a>
+            <a href = "contact.html"><button class="contactbutton">CONTACT US</button></a>
+            <p>info@zencreate.com</p>
+            <p>0412870550</p>
+            <p>Copyright 2024 | Zen Creative | All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
 </html>

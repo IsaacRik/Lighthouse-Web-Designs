@@ -1,0 +1,566 @@
+/* // Reset
+// -------------------------------------- */
+.sr-only{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+p, h1, h2, h3 ,h4{
+    padding: 0 2rem 0;
+}
+
+li {
+    padding-right: 2rem;
+}
+
+/* // Root Styles
+// ------------------------------- */
+:root{
+    --primary-colour: #020076;
+    --secondary-colour: #0066FF;
+    font-family:"Avenir", sans-serif;
+}
+a {
+    color: white;
+}
+
+p {
+    font-size: 1.1em;
+}
+.coloured-text {
+    color: var(--secondary-colour);
+}
+
+h2, h4{
+    margin-bottom: 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+}
+
+button{
+    border: none;
+    width: 9rem;
+    height: 2.3rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contactbutton:hover{
+    background-color: rgb(234, 234, 234);
+    cursor: grab;
+}
+
+footer button {
+    margin-left: 0px;
+}
+
+
+
+/* // -----------------------------------
+// Navigation */
+.primary-navigation{
+    list-style:none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    gap: 2em;
+}
+
+/* // Navigation - Mobile Devices
+// -------------------------------------- */
+    .primary-navigation {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 30%;
+        background: hsl(0, 0%, 100%,0.1);
+        backdrop-filter: blur(1rem);
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in;
+     }
+     #about .primary-navigation, #contact .primary-navigation, #portfolio .primary-navigation {
+        background: hsla(0, 0%, 51%, 0.475);
+     }
+     @media only screen and (min-width: 768px) {
+        #about .primary-navigation, #contact .primary-navigation, #portfolio .primary-navigation {
+            background: none;
+        }
+     }
+
+     .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+     .hamburger {
+        position: absolute;
+        z-index: 9999;
+        top: 1rem;
+        right: 0rem;
+     }
+
+     nav > ul > li > a:hover{
+        color: rgb(149, 219, 237);
+
+     }
+
+     ul > li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     .line{
+        height: 3px;
+        width: 90%;
+        background-color: rgb(39, 186, 240);
+        margin-top: 5px;
+     }
+
+     @media only screen and (min-width: 1200px) {
+        body .hamburger{
+            display: none;
+        }
+         .primary-navigation{
+            flex-direction: row;
+            padding:0;
+            position: relative;
+            backdrop-filter:none;
+            inset: 0;
+            transform: translateX(0);
+            background: none;
+        }
+        .navcontainer{
+            display: flex;
+            justify-content: right;
+            flex:auto;
+            padding-top: 2rem;
+            padding-right:15rem;
+            padding-left: 15rem;
+            margin-left: -10rem;
+
+        }
+        .primary-navigation li a {
+            font-size: 1.4rem;
+        }
+        .header{
+            padding-top: 20px;
+            align-content: space-between;
+        }
+        .header .logo {
+            position: relative;
+            min-width: 300px;
+        }
+    }
+/* Header
+-------------------------------------------- */
+.header{
+   height: clamp(100px, 18vw, 200px);
+   background-image: url(../images/Header2.jpg);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   padding-left: 12vw;
+}
+
+#main_page .header{
+    background-image: none;
+    height: 140px
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+.header .logo {
+    position: absolute;
+    top:1rem;
+    left:1rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .header .logo {
+        position: relative;
+    }
+}
+
+/* Footer
+----------------------------------------- */
+
+footer {
+    background-image: url(../images/footer.svg);
+    margin-top: -200px;
+    padding-bottom: 1rem;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
+
+.footer_info{
+    padding-top: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer_info a {
+    margin-left: 2rem;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    footer, .footer_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_info a{
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------  */
+
+/* Individual Page Styling
+            |
+            |
+            |
+            V                
+                                                                                                                    */
+/* Main Page
+-------------------------------------- */
+#main_page {
+background-image: url(../images/header.svg);
+background-repeat: no-repeat;
+}
+
+.hero {
+    color: white;
+    height: 150px;
+}
+
+.why {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+    .why{
+        padding-left: clamp(0rem, 20vw, 50rem);
+        padding-right: clamp(0rem, 20vw, 50rem);
+        padding-top: 20px;
+        text-align: center;
+
+    }
+}
+.devices {
+    width: 50vw;
+    min-width: 510px;
+    position: relative;
+}
+
+.monthly_subscription{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bubbles.svg); 
+    padding-bottom: 50px;
+}
+
+.dollar {
+    width: 130px;
+}
+
+.relax {
+    width: 300px;
+}
+
+.feature{
+    margin-left: 2rem;
+    display: flex;
+    padding-left: 1rem;
+
+}
+.feature_icon {
+    width: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+    .monthly_subscription > .features{
+        padding-left: clamp(0rem, 15vw, 50rem);
+        padding-right: clamp(0rem, 10vw, 50rem);
+
+    }
+}
+.right h4 {
+    color: var(--secondary-colour);
+}
+
+.not_convinced{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image:linear-gradient(#b9d5ff,white);
+}
+
+.here_to_help{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 768px) {
+    .not_convinced, .here_to_help{
+        padding-left: clamp(0rem, 10vw, 50rem);
+        padding-right: clamp(0rem, 10vw, 50rem);
+        padding-top: 20px;
+        text-align: center;
+    }
+    }
+.handshake {
+    width: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        margin-left: clamp(0rem, 11vw, 20rem);
+        margin-right: clamp(5rem, 2vw, 20rem);
+    }
+}
+
+
+/* About page
+------------------------------------------------------------------ */
+.container{
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.about_me{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+.me {
+    width: 200px;
+}
+
+.about_right{
+    max-width: 600px;
+    
+}
+
+.wordpress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/polybackground.svg);
+    padding-bottom: 60px;
+}
+
+.break{
+    background-image:linear-gradient(#bdcfd7,white);
+    height: 250px;
+}
+.mission {
+    margin-top: -180px;
+}
+
+.philo_image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.philosophies{
+    margin-top: 30px;
+}
+.philosophy_icon {
+    width: 80px;
+}
+.philosophy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.philosophy_image {
+    width: 150px;
+}
+.coded_img{
+    width: 120px;
+}
+@media only screen and (min-width: 768px) {
+    .about_me, .wordpress {
+        padding-left: clamp(0rem, 15vw, 50rem);
+        padding-right: clamp(0rem, 10vw, 50rem);
+    }
+}
+
+/* 
+Contact Page
+------------------------------------------------------------------ */
+.contact_img{
+    width: 300px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 0px 5px lightgray;
+    border-width: 0px;
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--primary-colour),var(--secondary-colour)) 1;
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 4rem;
+}
+form {
+    width: 90%;
+    max-width: 600px;
+    overflow: hidden;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.centre{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.submit{
+    margin: 0 auto;
+}
+
+.input_group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input {
+    height: 2rem;
+}
+textarea {
+    padding-top: 0.5rem;
+}
+
+input, textarea{
+    width: calc(100% - 1rem);
+    padding-left: 0.5rem;  
+     /* Adds padding inside an input without increasing width */
+    outline: 0;
+    border-radius: 8px;
+    border: solid 1px lightgray;
+    background:transparent;
+}
+label {
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    padding: 0.5rem;
+    color: lightgray;
+    transition:0.2s;
+}
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+    top:-30px;
+    font-size: .8rem;
+}
+
+.submit {
+
+    border: none;
+    outline:none;
+    position: relative;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--primary-colour), var(--secondary-colour));
+    cursor: pointer;
+    z-index: 1;
+}
+
+.submit::after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: white;
+    border-radius: 4px;
+    z-index: -1;
+    transition: 200ms;
+}
+
+.submit::before{
+    content: attr(data);
+    /*Allows button to be used across website, makle sure html has a data ="*button content*" field.*/
+    font-size: 16px;
+    background: linear-gradient(to left, var(--primary-colour), var(--secondary-colour));
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+}
+.submit:hover::after {
+    opacity: 10%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.submit:hover::before{
+    color: white;
+}
+
+.contact_icon{
+    width: 20px;
+}
+.contact_info{
+    display: flex;
+    margin-top: 20px;
+}
+.contact_info h4{
+    margin: 0px;
+}
+
+/* 
+Portfolio
+------------------------------------------------------------------ */
+.wipcontain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.WIP{
+    width: 300px;
+}
