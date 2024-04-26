@@ -28,10 +28,9 @@ li {
     --secondary-colour: #0066FF;
     font-family:"Avenir", sans-serif;
 }
-a {
-    color: white;
+a:hover{
+    color: blue;
 }
-
 p {
     font-size: 1.1em;
 }
@@ -289,29 +288,24 @@ background-repeat: repeat-x;
     color: white;
     height: 150px;
 }
-
 .why {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-@media only screen and (min-width: 768px) {
-    .why{
-        padding-left: clamp(0rem, 20vw, 50rem);
-        padding-right: clamp(0rem, 20vw, 50rem);
-        padding-top: 20px;
-        text-align: center;
-    }
 
+.why > p {
+    max-width: 900px;
 }
+
 .devices {
     margin-top: 50px;
     width: 100%;
     height: auto;
     position: relative;
     z-index: -1;
+    max-width: 700px;
 }
 @media only screen and (max-width: 432px) {
     .devices {
