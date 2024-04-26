@@ -5,7 +5,7 @@
 }
 
 a{
-    color: inherit;
+    color: white;
     text-decoration: none;
 }
 body{
@@ -28,7 +28,11 @@ li {
     --secondary-colour: #0066FF;
     font-family:"Avenir", sans-serif;
 }
-a:hover{
+
+.weblink {
+    color: black;
+}
+.weblink:hover{
     color: blue;
 }
 p {
@@ -49,6 +53,7 @@ h1 {
 
 .logo {
     width: 130px;
+    height: auto;;
 }
 
 button{
@@ -340,11 +345,6 @@ background-repeat: repeat-x;
     width: 30px;
 }
 
-@media only screen and (min-width: 768px) {
-    .monthly_subscription > .features{
-        padding-left: 15vw;
-    }
-}
 .right h4 {
     color: var(--secondary-colour);
 }
