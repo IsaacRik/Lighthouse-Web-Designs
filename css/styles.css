@@ -92,6 +92,7 @@ footer button {
         z-index: 1000;
         inset: 0 0 0 30%;
         background: hsl(0, 0%, 100%,0.1);
+        -webkit-backdrop-filter: blur(1rem);
         backdrop-filter: blur(1rem);
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
@@ -275,7 +276,7 @@ footer p{
 -------------------------------------- */
 #main_page {
 background-image: url(../images/header.svg);
-background-repeat: no-repeat;
+background-repeat: repeat-x;
 }
 
 .hero {
@@ -336,9 +337,7 @@ background-repeat: no-repeat;
 
 @media only screen and (min-width: 768px) {
     .monthly_subscription > .features{
-        padding-left: clamp(0rem, 15vw, 50rem);
-        padding-right: clamp(0rem, 10vw, 50rem);
-
+        padding-left: 15vw;
     }
 }
 .right h4 {
