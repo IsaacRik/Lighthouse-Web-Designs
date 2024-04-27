@@ -304,16 +304,35 @@ background-repeat: repeat-x;
     max-width: 900px;
 }
 
-.devices {
-    max-width: 100%;
+.devices_mobile, .devices_desktop {
     position: relative;
     z-index: -1;
 }
-@media only screen and (max-width: 432px) {
+@media only screen and (max-width:720px) {
+    .devices_mobile {
+        display: inline;
+    }
+    .devices_desktop{
+        display: none;
+    }
+    
+}
+@media only screen and (min-width:720px) {
+    .devices_mobile {
+        display: none;
+    }
+    .devices_desktop{
+        display: inline;
+    }
+    
+}
+
+
+/* @media only screen and (max-width: 432px) {
     .devices {
         margin-top: 70px;
     }
-}
+} */
 
 .monthly_subscription{
     padding-top: 30px;
