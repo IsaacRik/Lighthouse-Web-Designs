@@ -305,27 +305,13 @@ background-repeat: repeat-x;
 }
 
 .devices {
-    margin-top: 50px;
-    width: 300px;
+    margin-top: 70px;
+    max-width: 100%;
     height: auto;
     position: relative;
     z-index: -1;
 }
-@media only screen and (max-width: 432px) {
-    .devices {
-        margin-top: 70px;
-    }
-}
-@media only screen and (min-width: 600px) {
-    .devices {
-        width: 450px ;
-    }
-}
-@media only screen and (min-width: 920px) {
-    .devices {
-        width: 650px;
-    }
-}
+
 
 .monthly_subscription{
     padding-top: 30px;
