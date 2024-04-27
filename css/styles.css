@@ -183,7 +183,7 @@ footer button {
 -------------------------------------------- */
 .header{
    height: clamp(150px, 14vw, 180px);
-   background-image: url(../images/Header2.jpg);
+   background-image: url(../images/header2.svg);
    background-position: center;
    background-size: cover;
    display: flex;
