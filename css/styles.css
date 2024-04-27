@@ -306,11 +306,10 @@ background-repeat: repeat-x;
 
 .devices {
     margin-top: 50px;
-    width: 100%;
+    width: 300px;
     height: auto;
     position: relative;
     z-index: -1;
-    max-width: 700px;
 }
 @media only screen and (max-width: 432px) {
     .devices {
@@ -327,6 +326,14 @@ background-repeat: repeat-x;
     padding-bottom: 50px;
 }
 
+.dollar {
+    width: 130px;
+}
+
+.relax {
+    width: 300px;
+    height: auto;
+}
 
 .feature{
     margin-left: 2rem;
