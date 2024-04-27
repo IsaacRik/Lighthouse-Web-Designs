@@ -339,7 +339,6 @@ background-repeat: repeat-x;
     margin-left: 2rem;
     display: flex;
     padding-left: 1rem;
-
 }
 .feature_icon {
     width: 30px;
@@ -374,7 +373,7 @@ background-repeat: repeat-x;
 }
 
 @media only screen and (min-width: 768px) {
-    .hero {
+    .features, .hero {
         margin-left: clamp(0rem, 11vw, 20rem);
         margin-right: clamp(5rem, 2vw, 20rem);
     }
