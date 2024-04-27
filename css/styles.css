@@ -53,7 +53,7 @@ h1 {
 
 .logo {
     width: 130px;
-    height: auto;;
+    height: auto;
 }
 
 button{
@@ -314,6 +314,16 @@ background-repeat: repeat-x;
 @media only screen and (max-width: 432px) {
     .devices {
         margin-top: 70px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .devices {
+        width: 450px ;
+    }
+}
+@media only screen and (min-width: 920px) {
+    .devices {
+        width: 650px;
     }
 }
 
