@@ -333,6 +333,7 @@ background-repeat: repeat-x;
 
 .relax {
     width: 300px;
+    height: auto;
 }
 
 .feature{
