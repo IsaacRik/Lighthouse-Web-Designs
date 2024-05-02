@@ -604,6 +604,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     margin: 0px;
 }
 
+.contact_info > h4{
+    margin-left: 1rem;
+}
 /* 
 Portfolio
 ------------------------------------------------------------------ */
