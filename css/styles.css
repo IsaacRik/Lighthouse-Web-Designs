@@ -25,8 +25,8 @@ li {
 // ------------------------------- */
 
 :root{
-    --secondary-colour: #8224c7;
-    --primary-colour: #0066FF;
+    --primary-colour: #8224c7;
+    --secondary-colour: #0066FF;
     font-family:"Avenir", sans-serif;
 }
 
@@ -350,6 +350,7 @@ background-repeat: repeat-x;
 .feature{
     margin-left: 2rem;
     display: flex;
+    align-items: center;
     padding-left: 1rem;
 }
 .feature_icon {
@@ -449,9 +450,11 @@ background-repeat: repeat-x;
 .philosophy_image {
     width: 150px;
 }
-.coded_img{
-    width: 120px;
+.coded_image{
+    width: 400px;
 }
+
+
 @media only screen and (min-width: 768px) {
     .about_me, .wordpress {
         padding-left: clamp(0rem, 15vw, 50rem);
