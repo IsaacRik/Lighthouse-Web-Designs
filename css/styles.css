@@ -598,7 +598,6 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 }
 .contact_info{
     display: flex;
-    margin-top: 20px;
 }
 .contact_info h4{
     margin: 0px;
