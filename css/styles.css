@@ -536,6 +536,8 @@ input, textarea{
     border-radius: 8px;
     border: solid 1px lightgray;
     background:transparent;
+    resize: none;
+    
 }
 label {
     height:100%;
