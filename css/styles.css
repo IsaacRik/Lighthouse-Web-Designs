@@ -427,7 +427,6 @@ background-repeat: repeat-x;
 .about_me{
     display: flex;
     justify-content: center;
-    padding-bottom: 60px;
 }
 .me {
     width: 400px;
