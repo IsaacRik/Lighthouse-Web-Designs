@@ -27,6 +27,7 @@ li {
 :root{
     --primary-colour: #8224c7;
     --secondary-colour: #0066FF;
+    --third_colour: #FDA768;
     font-family:"Avenir", sans-serif;
 }
 
@@ -110,7 +111,7 @@ footer button {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: var(--third_colour);
     transform-origin: bottom left;
     transition: transform 0.15s ease-out;
 }
@@ -158,7 +159,7 @@ footer button {
      }
 
      nav > ul > li > a:hover{
-        color: rgb(149, 219, 237);
+        color: var(--third_colour);
 
      }
 
@@ -429,7 +430,7 @@ background-repeat: repeat-x;
     justify-content: center;
 }
 .me {
-    width: 400px;
+    width: 300px;
 }
 
 .wordpress{
