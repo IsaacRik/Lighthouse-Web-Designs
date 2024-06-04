@@ -6,6 +6,7 @@
 
 a{
     text-decoration: none;
+    color: white;
 }
 body{
     margin: 0;
@@ -20,9 +21,6 @@ li {
     padding-right: 2rem;
 }
 
-li > a {
-    color: white;
-}
 
 /* // Root Styles
 // ------------------------------- */
@@ -80,10 +78,8 @@ footer button {
     margin-left: 0px;
 }
 
-.mobile {
+h4 > a {
     color: black;
-   
-   
     text-decoration: none;
 }
 @media only screen and (min-width: 768px) {
