@@ -3,10 +3,10 @@
 .sr-only{
     display: none;
 }
-*{
-    border:solid red;
-}
 
+*{
+    border: solid red;
+}
 a{
     text-decoration: none;
 }
