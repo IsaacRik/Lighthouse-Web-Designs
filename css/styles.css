@@ -20,6 +20,10 @@ li {
     padding-right: 2rem;
 }
 
+li > a {
+    color: white;
+}
+
 /* // Root Styles
 // ------------------------------- */
 
